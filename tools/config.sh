@@ -6,11 +6,11 @@ if [ -z $IDF_PATH ]; then
 fi
 
 if [ -z $IDF_BRANCH ]; then
-    IDF_BRANCH="release/v5.1"
+    IDF_BRANCH="sgryphon/v5.1/fix-dns-sort-ipv6-only-network"
 fi
 
 if [ -z $AR_PR_TARGET_BRANCH ]; then
-    AR_PR_TARGET_BRANCH="master"
+    AR_PR_TARGET_BRANCH="idf-release/v5.1"
 fi
 
 if [ -z $IDF_TARGET ]; then
@@ -29,7 +29,7 @@ AR_USER="espressif"
 
 # The full name of the repository
 AR_REPO="$AR_USER/arduino-esp32"
-IDF_REPO="$AR_USER/esp-idf"
+IDF_REPO="sgryphon/esp-idf"
 AR_LIBS_REPO="$AR_USER/esp32-arduino-libs"
 
 AR_REPO_URL="https://github.com/$AR_REPO.git"
